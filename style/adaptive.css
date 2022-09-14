@@ -1,0 +1,258 @@
+@media all and (max-width: 1024px) {
+    .navbar__list {
+        width: 80%;
+        padding: 0;
+        font-size: 15px;
+    }
+
+    .container__desc_sm {
+        width: 60%;
+    }
+
+    .container__desc {
+        width: 100%;
+    }
+
+    .services__list_item {
+        width: 40%;
+    }
+
+    .education h2 {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    .navbar__item {
+        display: none;
+    }
+
+    .navbar__list {
+        justify-content: right;
+    }
+
+    .burger {
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 40px;
+    }
+
+    .burger_close {
+        display: block;
+        background-color: transparent;
+        border: none;
+        margin-top: 3%;
+        width: 30px;
+    }
+
+    .burger img {
+        width: 100%;
+    }
+
+    .burger_close img {
+        width: 100%;
+    }
+
+    .skills__work li {
+        text-align: left;
+    }
+
+    .skills__person li {
+        text-align: left;
+    }
+
+    .services {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hobby__list_item {
+        width: 60%;
+        margin: 2% auto;
+    }
+
+    .hobby__list_item img {
+        width: 30%;
+        height: 30%;
+        margin: 2% auto;
+    }
+
+    .education h2 {
+        width: 50%;
+        font-size: 35px;
+    }
+
+    .education__main_item p {
+        margin-left: 0;
+    }
+
+    .education__main_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #msg {
+        width: 400px;
+    }
+
+    .burger-menu {
+        position: fixed;
+        z-index: 2;
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 10%;
+        justify-content: space-between;
+        align-items: center;
+        background-color:  rgb(255, 112, 112);
+        border: 2px solid black;
+    }
+
+
+    .burger-menu li {
+        list-style-type: none;
+    }
+
+    .burger-menu a {
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .burger-menu__item  a {
+        font-size: 16px;
+    }
+
+    .burger-menu__list {
+        padding: 0;
+    }
+
+}
+
+@media all and (max-width:600px) {
+    .container__desc_about p {
+        width: 100%;
+    }
+
+    .container__desc_sm {
+        width: 90%;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .skills__work {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+
+    .skills__person {
+        width: 70%;
+    }
+
+    .services__list_item {
+        width: 80%;
+    }
+
+    .hobby__list_item:nth-child(3) {
+        margin-bottom: 10%;
+    }
+
+    #msg {
+        width: 400px;
+    }
+
+    .container__photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container__desc {
+        margin-top: 10%;
+    }
+
+    .hobby h2, .education h2 {
+        font-size: 30px;
+    }
+
+
+}
+
+@media all and (max-width: 510px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .container__desc_about > h2 {
+        font-size: 16px;
+    }
+
+    .container__desc_about > p {
+        font-size: 10px;
+    }
+
+    .container__desc_sm {
+        width: 100%;
+    }
+
+    #msg {
+        width: 250px;
+    }
+
+    .navbar {
+        padding: 0 10%;
+    }
+
+    .hobby__list_item h3 {
+        font-size: 27px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    #msg {
+        width: 250px;
+    }
+    
+    .navbar {
+        padding: 0 10%;
+    }
+
+    .container__photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hobby h2, .education h2 {
+        font-size: 25px;
+    }
+
+    .hobby__list_item h3 {
+        font-size: 25px;
+    }
+
+    .navbar {
+        padding: 0 10%;
+    }
+
+    .container__desc {
+        margin-top: 20%;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .container__desc {
+        margin-top: 20%;
+    }
+}

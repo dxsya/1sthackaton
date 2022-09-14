@@ -1,0 +1,403 @@
+/* navbar  start */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.burger-menu, .burger {
+    display: none;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 10%;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(255, 112, 112);
+    position: fixed;
+}
+
+a:active, a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 23px;
+    align-content: center;
+}
+
+.navbar__list {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* navbar end  */
+
+/* !header start  */
+
+    header {
+        padding: 1% 0;
+        padding-top: 7%;
+    }
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .container__desc {
+        margin: 4% auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        animation-name: left;
+        animation-duration: 5s;
+    }
+
+    .container__photo img {
+        width: 270px;
+        height: 270px;
+        border-radius: 50%;
+    }
+
+    .container__desc_sm {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        width: 40%;
+    }
+
+    .container__desc_sm li {
+        list-style-type: none;
+    }
+
+    .container__desc_about p {
+        width: 60%;
+    }
+
+    @keyframes left {
+        0% {
+            margin-left: -100%;
+        }
+        50% {
+            margin-left: -50%;
+        }
+        100% {
+            margin-left: 10%;
+        }
+    }
+    
+
+/* !header end  */
+
+/* ? content start  */
+
+.content {
+    background: url(/img/bg1.jpeg);
+    height: 100%;
+    padding-bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.content h2 {
+    padding-top: 5%;
+    font-size: 40px;
+    color: white;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills__work {
+    width: 43%;
+    padding: 3% 5%;
+    height: 100%;
+    background-color: rgb(255, 248, 248);
+    border: 5px solid red;
+}
+
+.skills__work img, .skills__person img {
+    width: 50px;
+    display: none;
+}
+
+.skills__work:hover img, .skills__person:hover img{
+    display: block;
+}
+
+
+.skills__work ul, .skills__person ul {
+    padding: 0;
+}
+
+.skills__work li, .skills__person li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.skills h3 {
+    font-size: 25px;
+}
+
+.skills__person {
+    width: 30%;
+    padding: 3% 5%;
+    height: 100%;
+    background-color: rgb(255, 248, 248);
+    border: 5px solid red;
+}
+
+/* ? content end  */
+
+/* TODO services */
+
+.services {
+    width: 94%;
+    text-align: center;
+    padding: 3% 5%;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 40px;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.services__list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26%;
+    border: 2px solid black;
+    padding: 2%;
+    margin-bottom: 2%;
+    transition: 1s;
+}
+
+.services__list_item h3 {
+    font-size: 27px;
+}
+
+.services__list_item p {
+    font-size: 20px;
+}
+
+.services__btn {
+    background-color: white;
+    padding: 5px 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.services__btn:active {
+    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.7);
+}
+
+.services__list_item:hover {
+    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.7);
+    background-color: rgb(254, 235, 235);
+}
+
+/* TODO services  end*/
+
+/* * education/hobby  */
+
+.edu-hob {
+    background: url(/img/bg2.jpeg);
+    padding: 3% 0 5% 0;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+.hobby h2 {
+    font-size: 40px;
+    background-color: white;
+    width: 30%;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.hobby__list {
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hobby__list_item {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    margin: 1%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.hobby__list_item img {
+    width: 50%;
+    height: 50%;
+    margin: 2% auto;
+}
+
+.hobby__list_item p {
+    margin: 0 2%;
+    margin-bottom: 5%;
+    text-align: left;
+    font-weight: 600;
+}
+
+.hobby__list_item h3 {
+    margin: 0 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.education__main {
+    width: 92%;
+    margin: 1% auto;
+    height: 100%;
+    background-color: white;
+    border: 2px solid black;
+    text-align: left;
+}
+
+.education h2 {
+    font-size: 40px;
+    background-color: white;
+    width: 30%;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+
+.education__main_item {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+.education__main_item p {
+    font-size: 18px;
+    margin-left: 5%;
+    color: rgb(213, 213, 213);
+    transition: 1s;
+}
+
+.education__main p:hover {
+    color: red;
+}
+
+/* * education/hobby  */
+
+/* footer start  */
+
+footer {
+    background-color:  rgb(180, 54, 54);
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2%;
+}
+
+footer h3 {
+    color: white;
+    margin: 0;
+    font-size: 35px;
+    padding-top: 2%;
+}
+
+.footer__main {
+    margin-left: 10%;
+}
+
+.footer__main input {
+    background-color: rgb(251, 135, 135);
+    border: 1px solid red;
+    padding: 10px 3%;
+    border-radius: 10px;
+    margin: 2% 20px 0 0;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#msg {
+    display: block;
+    height: 100px;
+    padding: 0;
+    width: 500px;
+    padding-left: 2.5%;
+}
+
+.footer__btn {
+    background-color: rgb(113, 40, 40);
+    color: white;
+    border: 1px solid red;
+    padding: 10px 3%;
+    border-radius: 10px;
+    margin: 2% 20px 0 0;
+}
+
+.footer__btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer__btn:active {
+    box-shadow: 4px 4px 7px 0px rgba(0,0,0,0.7);
+}
+
+.footer p {
+    margin-left: 10%;
+    color: white;
+}
+
+select {
+    display: block;
+    background-color: rgb(251, 135, 135);
+    border: 1px solid red;
+    padding: 5px 2%;
+    border-radius: 10px;
+    margin: 2% 20px 0 0;
+    color: white;
+}
+
+hr {
+    margin-top: 2%;
+}
+
+/* footer end  */
