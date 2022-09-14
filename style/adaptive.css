@@ -20,6 +20,14 @@
     .education h2 {
         width: 40%;
     }
+
+    .skills__work li {
+        text-align: left;
+    }
+
+    .skills__person li {
+        text-align: left;
+    }
 }
 
 @media all and (max-width: 768px) {
